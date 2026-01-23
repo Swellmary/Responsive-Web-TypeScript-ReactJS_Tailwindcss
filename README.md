@@ -110,6 +110,7 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
 - Added different parts of planned components of the website inside the return <div> 
 - Added components folder with it added the component sections (NavBar, Hero, ..)
 - add components section and scaffolded (empty structure) https://prnt.sc/Vbf14id0oyZb
+- imported sections to App.jsx
 
 ## Usage
 How to run/use it
