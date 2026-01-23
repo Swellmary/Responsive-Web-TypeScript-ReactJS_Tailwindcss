@@ -111,6 +111,8 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
 - Added components folder with it added the component sections (NavBar, Hero, ..)
 - add components section and scaffolded (empty structure) https://prnt.sc/Vbf14id0oyZb
 - imported sections to App.jsx
+- git push error | removed duplicate commit and pushed to master but error | used: (reset --soft & commit --amend) on updating the history and combining the commit | solution: -f --> git push origin master -f, merged the update
+- 
 
 ## Usage
 How to run/use it
