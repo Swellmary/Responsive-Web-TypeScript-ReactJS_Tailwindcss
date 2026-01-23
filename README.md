@@ -113,8 +113,11 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
 - imported sections to App.jsx
 - git push error | removed duplicate commit and pushed to master but error | used: (reset --soft & commit --amend) on updating the history and combining the commit | solution: -f --> git push origin master -f, merged the update
 
-- Components: Starting at NavBar
-- 
+- Components: Starting at NavBar (Logo & Navigation)
+- Responsive NavBar: Get a Humberger Icon
+  - Icon: Install: npm i lucide-react
+  - added import: import { Menu } from "lucide-react";
+
 
 ## Usage
 How to run/use it
