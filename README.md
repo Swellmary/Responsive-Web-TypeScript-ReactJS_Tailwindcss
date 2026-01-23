@@ -105,7 +105,9 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
 - setup tailwindcss
 - removed some files: App.css and kept the index.css as the main css files
 - Error_display:: App.tsx css wrong file - updated & imported active css file | enountered an error after just adding @import "tailwindcss"; my App.tsx has not been updated which css should run https://prnt.sc/bVM7_L1a9fyX - and since I removed the App.css, should be index.css and it worked: https://prnt.sc/vvTg_j5Ir5dd - https://prnt.sc/r5tSf3YuAk7T
-- 
+- cleaned up the App.tsx boiler, the initial code that came with the setup.
+- Added some default designs from class App.jsx <div>
+- Added different parts of planned components of the website inside the return <div> 
 
 ## Usage
 How to run/use it
