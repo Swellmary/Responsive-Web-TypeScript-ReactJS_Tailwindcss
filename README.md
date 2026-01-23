@@ -108,6 +108,8 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
 - cleaned up the App.tsx boiler, the initial code that came with the setup.
 - Added some default designs from class App.jsx <div>
 - Added different parts of planned components of the website inside the return <div> 
+- Added components folder with it added the component sections (NavBar, Hero, ..)
+- add components section and scaffolded (empty structure) https://prnt.sc/Vbf14id0oyZb
 
 ## Usage
 How to run/use it
