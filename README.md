@@ -100,6 +100,13 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
 - removed App.css and we're gonna have only one css file which the index.css we also have
 -  
 
+# MY STORY
+- Setup project with npx create-vite@latest
+- setup tailwindcss
+- removed some files: App.css and kept the index.css as the main css files
+- Error_display:: App.tsx css wrong file - updated & imported active css file | enountered an error after just adding @import "tailwindcss"; my App.tsx has not been updated which css should run https://prnt.sc/bVM7_L1a9fyX - and since I removed the App.css, should be index.css and it worked: https://prnt.sc/vvTg_j5Ir5dd - https://prnt.sc/r5tSf3YuAk7T
+- 
+
 ## Usage
 How to run/use it
 
