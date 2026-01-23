@@ -6,7 +6,7 @@ export default function NavBar() {
             <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
 
                 {/* Logo logo+text*/}
-                <div className="flex items-center space-x-1 group cursor-pointer">
+                <div className="hidden md:flex items-center space-x-1 group cursor-pointer">
                     <div>
                         <img src="/logo.png" alt="CodeFlow" className="w-6 h-6 sm:w-8 h-8"/>
                     </div>
@@ -25,8 +25,8 @@ export default function NavBar() {
                 </div>
                 
                 {/* Responsive Mobile NavBar - Humberger Icon*/}
-                <button>
-                    <Menu />
+                <button className="md:hidden p-2 text-gray-300 hover:text-white">
+                    <Menu className="w-5 h-5 sm:w-6 sm:h-6"/>
                 </button>
             </div>
         </div>

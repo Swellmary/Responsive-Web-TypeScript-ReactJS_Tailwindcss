@@ -117,6 +117,7 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
 - Responsive NavBar: Get a Humberger Icon
   - Icon: Install: npm i lucide-react
   - added import: import { Menu } from "lucide-react";
+  - set icon hidden in md-lg
 
 
 ## Usage
