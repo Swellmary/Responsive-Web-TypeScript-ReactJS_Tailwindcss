@@ -26,10 +26,12 @@ export default function Hero() {
             <div className="absolute bottom-20 right-4 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
 
             <div>
-                <div >
-                    {/* IDE HEADER */}
-                    <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
-                        
+                <div>
+                    <div className="bg-gradient-to-br">
+                        {/* IDE HEADER */}
+                        <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
