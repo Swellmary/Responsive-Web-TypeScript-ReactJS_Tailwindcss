@@ -120,7 +120,8 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
   - set icon hidden in md-lg
 - Create a @layer directives for an animation, when poped up it will appear slowly
 - Mobile first responsive visual explaination with double sm added on oneline https://prnt.sc/RtmOAoSwQqIQ https://prnt.sc/0g5Jhy9t4LE5
-
+- as I click on the menu links the navbar closes, added the condition set to original state from prev to false: onClick={() => setMobileMenuIsOpen(false)}
+- the beginnin of the className is the sm part, added hidden for the header links display
 
 ## Usage
 How to run/use it

@@ -11,7 +11,7 @@ export default function NavBar() {
             <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
 
                 {/* Logo logo+text*/}
-                <div className="hidden md:flex items-center space-x-1 group cursor-pointer">
+                <div className="md:flex items-center space-x-1 cursor-pointer sm: flex">
                     <div>
                         <img src="/logo.png" alt="CodeFlow" className="w-6 h-6 sm:w-8 h-8"/>
                     </div>
@@ -23,7 +23,7 @@ export default function NavBar() {
 
 
                 {/* Nav Links */}
-                <div className="flex items-center space-x-6 lg:space-x-8">
+                <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
                     <a href="#features" className="text-gray-300 hover:text-white text-sm lg:text-base">Features</a>
                     <a href="#pricing" className="text-gray-300 hover:text-white text-sm lg:text-base">Pricing</a>
                     <a href="#testimonials" className="text-gray-300 hover:text-white text-sm lg:text-base">Testimonials</a>
