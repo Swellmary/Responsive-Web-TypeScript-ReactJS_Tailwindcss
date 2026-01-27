@@ -113,6 +113,7 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
 - imported sections to App.jsx
 - git push error | removed duplicate commit and pushed to master but error | used: (reset --soft & commit --amend) on updating the history and combining the commit | solution: -f --> git push origin master -f, merged the update
 
+>> NAVBAR <<
 - Components: Starting at NavBar (Logo & Navigation)
 - Responsive NavBar: Get a Humberger Icon
   - Icon: Install: npm i lucide-react
@@ -122,6 +123,12 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
 - Mobile first responsive visual explaination with double sm added on oneline https://prnt.sc/RtmOAoSwQqIQ https://prnt.sc/0g5Jhy9t4LE5
 - as I click on the menu links the navbar closes, added the condition set to original state from prev to false: onClick={() => setMobileMenuIsOpen(false)}
 - the beginnin of the className is the sm part, added hidden for the header links display
+
+>> HERO <<
+- added useState
+- added useEffect - the runtime of useState
+- useState & useEffect do: added style for mouse pointer highlights the dark color, wherever the mouse goes.
+
 
 ## Usage
 How to run/use it
