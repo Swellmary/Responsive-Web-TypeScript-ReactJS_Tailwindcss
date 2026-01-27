@@ -118,6 +118,7 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
   - Icon: Install: npm i lucide-react
   - added import: import { Menu } from "lucide-react";
   - set icon hidden in md-lg
+- Create a @layer directives for an animation, when poped up it will appear slowly
 
 
 ## Usage
