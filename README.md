@@ -128,6 +128,7 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
 - added useState
 - added useEffect - the runtime of useState
 - useState & useEffect do: added style for mouse pointer highlights the dark color, wherever the mouse goes.
+- added 2 different glows (given) - adjustable // animate-pulse is a tailwind built-in 
 
 
 ## Usage

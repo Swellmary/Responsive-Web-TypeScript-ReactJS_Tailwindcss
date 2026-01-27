@@ -19,6 +19,10 @@ export default function Hero() {
             <div className="absolute inset-0 opacity-30" style={{
                 background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.15), transparent 40%)` // added style for mouse pointer highlights the dark color, wherever the mouse goes.
             }}/>
+
+            {/* 2 different glows permanently stuck from top and bottom - adjustable*/}
+            <div className="absolute top-20 left-4 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />    {/* animate-pulse */}
+            <div className="absolute bottom-20 right-4 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
         </section>
     );
 }
