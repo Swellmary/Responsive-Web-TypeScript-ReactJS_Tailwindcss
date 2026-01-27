@@ -119,6 +119,7 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
   - added import: import { Menu } from "lucide-react";
   - set icon hidden in md-lg
 - Create a @layer directives for an animation, when poped up it will appear slowly
+- Mobile first responsive visual explaination with double sm added on oneline https://prnt.sc/RtmOAoSwQqIQ https://prnt.sc/0g5Jhy9t4LE5
 
 
 ## Usage
