@@ -91,7 +91,7 @@ export default function Navbar() {
 }`,
 };
 
-export const floatingCards = {
+export const floatingCards = { // pop-up at the side bar along with the tabs onClick
   "App.jsx": {
     bgColor: "bg-blue-500/20",
     iconColor: "text-blue-400",

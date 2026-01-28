@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown, MailWarningIcon } from "lucide-react";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { codeExamples } from '../data/CodeExamples';
+import { codeExamples, floatingCards } from '../data/CodeExamples';
 
 export default function Hero() {
     // gives a glow where your mouse is poiting
@@ -19,6 +19,7 @@ export default function Hero() {
         return () => window.removeEventListener("mousemove", handleMouseMove); // Removed so it won't cause memory leaks
     }, []);
 
+    
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">  
             {/* RENDER MOUSE ARROW GLOW */}
@@ -75,7 +76,7 @@ export default function Hero() {
                                     borderRadius: "8px",
                                     fontSize: "11px",
                                     lineHeight: "1.4",
-                                    height: "180px",
+                                    height: "clamp(180px, 40vh, 350px)",  // ← min, preferred, max
                                     border: "1px solid #3c3c3c", 
                                     overflow: "auto",
                                     scrollbarWidth: "none"
@@ -84,7 +85,13 @@ export default function Hero() {
                                 </SyntaxHighlighter>
                             </div>
                         </div>
-                        
+                    </div>
+
+                    {/* Floating Card */}
+                    <div className={`hidden lg:block absolute bottom-4 right-4 transforms translate-x-8 translate-y-8 w-72 ${floatingCards[activeTab as keyof typeof codeExamples].bgColor}`}> // will give us an accurate color
+                        <div className="flex items-center space-x-2 mb-2">
+                            <div>{floatingCards[activeTab as keyof typeof codeExamples].icon}</div>
+                        </div>
                     </div>
                 </div>
             </div>
