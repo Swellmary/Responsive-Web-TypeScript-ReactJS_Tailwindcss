@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { codeExamples } from '../data/CodeExamples';
 
 export default function Hero() {
     // gives a glow where your mouse is poiting
@@ -63,6 +66,12 @@ export default function Hero() {
                                     className={`px-3 mr-1 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border 
                                     ${activeTab == "Navbar.jsx" ? "bg-blue-500/30 text-white border-blue-400/20" : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}
                                      transition-all duration-100 whitespace-nowrap`}>Navbar.jsx</button>
+                            </div>
+                            {/* Code Content */}
+                            <div className="relative overflow-hidden flex-grow">
+                                <SyntaxHighlighter language="jsx" style={atomOneDark}>
+                                    {codeExamples[activeTab as keyof typeof codeExamples]} //from codeExamples[activeTab] to .. [TypeScript reassurance]
+                                </SyntaxHighlighter>
                             </div>
                         </div>
                         
