@@ -43,6 +43,16 @@ export default function Hero() {
                             </div>
                             <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400"/>
                         </div>
+
+                        <div>
+                            {/* file tabs */}
+                            <div className="p-3 sm:p-4 relative h-full">
+                                <button className="px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border bg-white/5 text-gray-300 transition-all duration-100 whitespace-nowrap">App.jsx</button>
+                                <button className="px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border bg-white/5 text-gray-300 transition-all duration-100 whitespace-nowrap">Hero.jsx</button>
+                                <button className="px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border bg-white/5 text-gray-300 transition-all duration-100 whitespace-nowrap">Navbar.jsx</button>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
