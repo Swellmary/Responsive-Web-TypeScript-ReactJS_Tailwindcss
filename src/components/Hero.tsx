@@ -4,6 +4,7 @@ import { ChevronDown } from "lucide-react";
 export default function Hero() {
     // gives a glow where your mouse is poiting
     const [mousePosition, setMousePosition] = useState({x: 0, y: 0}); // default is zero
+    const [activeTab, setActiveTab] = useState("App.jsx");
 
     useEffect(() => {
         function handleMouseMove(e: MouseEvent) {
@@ -47,9 +48,15 @@ export default function Hero() {
                         <div>
                             {/* file tabs */}
                             <div className="p-3 sm:p-4 relative h-full">
-                                <button className="px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border bg-white/5 text-gray-300 transition-all duration-100 whitespace-nowrap">App.jsx</button>
-                                <button className="px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border bg-white/5 text-gray-300 transition-all duration-100 whitespace-nowrap">Hero.jsx</button>
-                                <button className="px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border bg-white/5 text-gray-300 transition-all duration-100 whitespace-nowrap">Navbar.jsx</button>
+                                <button className={`px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border 
+                                    ${activeTab == "App.jsx" ? "bg-blue-500/30 text-white border-blue-400/20" : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}
+                                     transition-all duration-100 whitespace-nowrap`}>App.jsx</button>
+                                <button className={`px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border 
+                                    ${activeTab == "App.jsx" ? "bg-blue-500/30 text-white border-blue-400/20" : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}
+                                     transition-all duration-100 whitespace-nowrap`}>Hero.jsx</button>
+                                <button className={`px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border 
+                                    ${activeTab == "App.jsx" ? "bg-blue-500/30 text-white border-blue-400/20" : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}
+                                     transition-all duration-100 whitespace-nowrap`}>Navbar.jsx</button>
                             </div>
                         </div>
                         
