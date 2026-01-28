@@ -19,7 +19,7 @@ export default function Hero() {
         return () => window.removeEventListener("mousemove", handleMouseMove); // Removed so it won't cause memory leaks
     }, []);
 
-    
+    const currentFloatingTab = floatingCards[activeTab as keyof typeof codeExamples];
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">  
             {/* RENDER MOUSE ARROW GLOW */}
@@ -88,9 +88,9 @@ export default function Hero() {
                     </div>
 
                     {/* Floating Card */}
-                    <div className={`hidden lg:block absolute bottom-4 right-4 transforms translate-x-8 translate-y-8 w-72 ${floatingCards[activeTab as keyof typeof codeExamples].bgColor}`}> // will give us an accurate color
+                    <div className={`hidden lg:block absolute bottom-4 right-4 transforms translate-x-8 translate-y-8 w-72 ${currentFloatingTab.bgColor}`}> // will give us an accurate color
                         <div className="flex items-center space-x-2 mb-2">
-                            <div>{floatingCards[activeTab as keyof typeof codeExamples].icon}</div>
+                            <div>{currentFloatingTab.icon}</div>
                         </div>
                     </div>
                 </div>
