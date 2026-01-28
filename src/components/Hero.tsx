@@ -88,9 +88,13 @@ export default function Hero() {
                     </div>
 
                     {/* Floating Card */}
-                    <div className={`hidden lg:block absolute bottom-4 right-4 transforms translate-x-8 translate-y-8 w-72 ${currentFloatingTab.bgColor}`}> // will give us an accurate color
+                    <div className={`lg:block absolute bottom-4 right-4 transforms translate-x-8 translate-y-8 w-72 ${currentFloatingTab.bgColor}`}>
                         <div className="flex items-center space-x-2 mb-2">
-                            <div>{currentFloatingTab.icon}</div>
+                            <div className= {`w-6 h-6 ${currentFloatingTab.iconColor} flex items-center justify-center text-sm font-bold`}>{currentFloatingTab.icon}</div>
+                            <span className={`text-sm font-medium ${currentFloatingTab.textColor}`}>{currentFloatingTab.title}</span>
+                        </div>
+                        <div className={`text-sm text-left ${currentFloatingTab.contentColor}`}>
+                            {currentFloatingTab.textColor}
                         </div>
                     </div>
                 </div>
