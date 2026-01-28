@@ -52,10 +52,10 @@ export default function Hero() {
                                     ${activeTab == "App.jsx" ? "bg-blue-500/30 text-white border-blue-400/20" : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}
                                      transition-all duration-100 whitespace-nowrap`}>App.jsx</button>
                                 <button className={`px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border 
-                                    ${activeTab == "App.jsx" ? "bg-blue-500/30 text-white border-blue-400/20" : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}
+                                    ${activeTab == "Hero.jsx" ? "bg-blue-500/30 text-white border-blue-400/20" : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}
                                      transition-all duration-100 whitespace-nowrap`}>Hero.jsx</button>
                                 <button className={`px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border 
-                                    ${activeTab == "App.jsx" ? "bg-blue-500/30 text-white border-blue-400/20" : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}
+                                    ${activeTab == "Navbar.jsx" ? "bg-blue-500/30 text-white border-blue-400/20" : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}
                                      transition-all duration-100 whitespace-nowrap`}>Navbar.jsx</button>
                             </div>
                         </div>
