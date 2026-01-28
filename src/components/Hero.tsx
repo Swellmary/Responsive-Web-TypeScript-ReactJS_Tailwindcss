@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, MailWarningIcon } from "lucide-react";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { codeExamples } from '../data/CodeExamples';
@@ -69,8 +69,18 @@ export default function Hero() {
                             </div>
                             {/* Code Content */}
                             <div className="relative overflow-hidden flex-grow">
-                                <SyntaxHighlighter language="jsx" style={atomOneDark}>
-                                    {codeExamples[activeTab as keyof typeof codeExamples]} //from codeExamples[activeTab] to .. [TypeScript reassurance]
+                                <SyntaxHighlighter language="jsx" style={atomOneDark}
+                                    customStyle={{
+                                    margin: 0,
+                                    borderRadius: "8px",
+                                    fontSize: "11px",
+                                    lineHeight: "1.4",
+                                    height: "180px",
+                                    border: "1px solid #3c3c3c", 
+                                    overflow: "auto",
+                                    scrollbarWidth: "none"
+                                }}>
+                                    {codeExamples[activeTab as keyof typeof codeExamples]} //from codeExamples[activeTab] to .. [TypeScript reassurance ]
                                 </SyntaxHighlighter>
                             </div>
                         </div>

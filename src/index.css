@@ -24,3 +24,8 @@
         transform: translateY(0);
     }
 }
+
+/* IDE scrollbar for [Chrome, Safari, Edge] */
+pre::-webkit-scrollbar {
+  display: none;
+}

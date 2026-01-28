@@ -134,7 +134,8 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
   - install: npm i react-syntax-highlighter
   - install react definition the first installation: npm i @types/react-syntax-highlighter
   - [import { codeExamples } from '../data/CodeExamples';] calling for code content https://prnt.sc/vwwkI_2gIoqD
-
+  - added design (updated height from 100px to 180 and scroll(scrollbarWidth & css pre::-webkit-scrollbar ))
+- Install Tailwind CSS IntelliSense extension to avoid warning yellow lines 
 
 
 ## Usage
