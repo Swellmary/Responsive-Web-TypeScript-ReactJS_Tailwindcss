@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ChevronDown, MailWarningIcon } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { codeExamples, floatingCards } from '../data/CodeExamples';
@@ -19,7 +19,7 @@ export default function Hero() {
         return () => window.removeEventListener("mousemove", handleMouseMove); // Removed so it won't cause memory leaks
     }, []);
 
-    const currentFloatingTab = floatingCards[activeTab as keyof typeof codeExamples];
+    const currentFloatingTab = floatingCards[activeTab as keyof typeof codeExamples]; //added floatingCards[activeTab] in one call away variable
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">  
             {/* RENDER MOUSE ARROW GLOW */}
@@ -88,7 +88,7 @@ export default function Hero() {
                     </div>
 
                     {/* Floating Card */}
-                    <div className={`lg:block absolute bottom-4 right-4 transforms translate-x-8 translate-y-8 w-72 ${currentFloatingTab.bgColor}`}>
+                    <div className={`lg:block absolute bottom-4 right-4 transforms translate-x-8 translate-y-8 w-72 ${currentFloatingTab.bgColor} backdrop-blur-xl p-4 border border-white/20 shadow-2xl rounded-md`}>
                         <div className="flex items-center space-x-2 mb-2">
                             <div className= {`w-6 h-6 ${currentFloatingTab.iconColor} flex items-center justify-center text-sm font-bold`}>{currentFloatingTab.icon}</div>
                             <span className={`text-sm font-medium ${currentFloatingTab.textColor}`}>{currentFloatingTab.title}</span>
