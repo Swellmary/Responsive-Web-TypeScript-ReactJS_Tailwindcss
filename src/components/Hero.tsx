@@ -31,8 +31,11 @@ export default function Hero() {
             <div className="absolute top-20 left-4 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />    {/* animate-pulse */}
             <div className="absolute bottom-20 right-4 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
             
-            <div>
-                <div>
+            {/* wrapped with 2 devs for section to stay smaller and not expand; BEFORE: https://prnt.sc/NkPPVQVzFgop AFTER: https://prnt.sc/PXYjjJDa2j2r */}
+            <div className="max-w-7xl mx-auto text-center relative w-full"> {/* IDE code inside */} 
+                <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-col-2 gap-6 sm:gap-8 lg:gap-12 items-center relative"> {/* structure for 2 opposing section (Description/Info & IDE) */} 
+                    <p>sample</p>
+                    {/* IDE */}
                     <div className="relative order-2 w-full">
                         {/* BIGGER IDE SIZE IN A MOBILE */}
                         <div className="relative bg-white/5 backrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-white/10">

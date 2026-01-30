@@ -136,6 +136,7 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
   - [import { codeExamples } from '../data/CodeExamples';] calling for code content https://prnt.sc/vwwkI_2gIoqD
   - added design (updated height from 100px to 180 and scroll(scrollbarWidth & css pre::-webkit-scrollbar ))
 - Install Tailwind CSS IntelliSense extension to avoid warning yellow lines 
+- IDE wrapped with 2 devs for section to stay smaller and not expand;  BEFORE: https://prnt.sc/NkPPVQVzFgop AFTER: https://prnt.sc/PXYjjJDa2j2r
 
 
 ## Usage
