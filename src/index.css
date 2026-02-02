@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@layer utilities {
+@layer utilities { /* navigation animation*/
     .animate-in  {
         animation-fill-mode: both;
     }
@@ -8,13 +8,33 @@
     .slide-in-from-top {
         animation-name: slideInFromTop;
     }
+
+    .slide-in-from-bottom {
+        animation-name: slideInFromBottom;
+    }
     .duration-100 {
         animation-duration: 100ms;
+    }
+
+    .duration-700 {
+        animation-duration: 700ms;
     }
 }
 
 /* Sliding From The Top Animation */
 @keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sliding From The Bottom Animation */
+@keyframes slideInFromBottom {
     from {
         opacity: 0;
         transform: translateY(-1rem);

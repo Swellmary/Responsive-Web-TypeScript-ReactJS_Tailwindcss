@@ -137,13 +137,18 @@ Build and Deploy a Fully Responsive Modern Website using TypeScript-ReactJS and 
   - added design (updated height from 100px to 180 and scroll(scrollbarWidth & css pre::-webkit-scrollbar ))
 - Install Tailwind CSS IntelliSense extension to avoid warning yellow lines 
 - IDE wrapped with 2 devs for section to stay smaller and not expand;  BEFORE: https://prnt.sc/NkPPVQVzFgop AFTER: https://prnt.sc/PXYjjJDa2j2r
+- structure for 2 opposing section (Description/Info & IDE)
+- Added a sparkle icon component on the top of the page little button looking "Introducing CodeFlow AI"
 
 
 ## Usage
 How to run/use it
+- npm run dev
 
 ## Contributing
 Guidelines for contributors (if open source)
+https://github.com/machadop1407/modern-ux-ui-website
+https://www.youtube.com/watch?v=yS7B1W2SwaU
 
 ## License
 
