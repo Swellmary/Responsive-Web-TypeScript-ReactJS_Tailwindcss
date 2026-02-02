@@ -41,7 +41,7 @@ export default function Hero() {
                             <span className="text-xs sm:text-sm text-blue-300">Introducing CodeFlow AI</span> {/* Announcement Bar */}
                         </div>
 
-                        <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight "> {/* Page Description Title */}
+                        <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight "> {/* Page Description Title / Gradient Design */}
                             <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">Code Faster</span>
                             <span className="bg-gradient-to-r from-white via-blue-400 to-cyan-400 bg-clip-text text-transparent block mb-1 sm:mb-2">Build Better</span>
                             <span className="bg-gradient-to-r from-white via-blue to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">With CodeFlow AI</span>
@@ -53,7 +53,14 @@ export default function Hero() {
                             production-ready code 10x faster.
                         </p>
 
-                
+                        <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-in-from-bottom duration-700 delay-300 ">
+                            <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-blue-600 to-blue-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
+                                <span>Start Coding Free</span>
+                                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
+                            </button>
+
+                            
+                        </div>
 
                     </div>
                     {/* IDE */}
