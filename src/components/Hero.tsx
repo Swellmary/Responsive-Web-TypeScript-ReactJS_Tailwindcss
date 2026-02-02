@@ -47,7 +47,13 @@ export default function Hero() {
                             <span className="bg-gradient-to-r from-white via-blue to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">With CodeFlow AI</span>
                         </h1>
 
-                        
+                        <p className="text-md sm:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-6 sm:mb-8 animate-in slide-in-from-bottom duration-700 delay-200 leading-relaxed"> {/* Page Description */}
+                            Accelerate your development workflow with intelligent code
+                            completion, automated testing, and smart debugging. Ship
+                            production-ready code 10x faster.
+                        </p>
+
+                
 
                     </div>
                     {/* IDE */}
