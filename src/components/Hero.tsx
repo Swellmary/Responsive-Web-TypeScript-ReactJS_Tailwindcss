@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ChevronDown, Sparkles } from "lucide-react";
+import { ArrowRight, ChevronDown, Play, Sparkles } from "lucide-react";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { codeExamples, floatingCards } from '../data/CodeExamples';
@@ -34,12 +34,21 @@ export default function Hero() {
             {/* wrapped with 2 devs for section to stay smaller and not expand; BEFORE: https://prnt.sc/NkPPVQVzFgop AFTER: https://prnt.sc/PXYjjJDa2j2r */}
             <div className="max-w-7xl mx-auto text-center relative w-full"> {/* IDE code inside */} 
                 <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-col-2 gap-6 sm:gap-8 lg:gap-12 items-center relative"> {/* structure for 2 opposing section (Description/Info & IDE) */} 
-                    
+                    <div>
                     {/* Description/tag line/buttom */}
-                    <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700">
-                        <Sparkles className="w-4 h-4 text-blue-500" />
-                        <span className="text-xs sm:text-sm text-blue-300">Introducing CodeFlow AI</span>
-                        <h1></h1>
+                        <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700">
+                            <Sparkles className="w-4 h-4 text-blue-500" />
+                            <span className="text-xs sm:text-sm text-blue-300">Introducing CodeFlow AI</span> {/* Announcement Bar */}
+                        </div>
+
+                        <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight "> {/* Page Description Title */}
+                            <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">Code Faster</span>
+                            <span className="bg-gradient-to-r from-white via-blue-400 to-cyan-400 bg-clip-text text-transparent block mb-1 sm:mb-2">Build Better</span>
+                            <span className="bg-gradient-to-r from-white via-blue to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">With CodeFlow AI</span>
+                        </h1>
+
+                        
+
                     </div>
                     {/* IDE */}
                     <div className="relative order-2 w-full">
