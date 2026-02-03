@@ -33,7 +33,7 @@ export default function Hero() {
             
             {/* wrapped with 2 devs for section to stay smaller and not expand; BEFORE: https://prnt.sc/NkPPVQVzFgop AFTER: https://prnt.sc/PXYjjJDa2j2r */}
             <div className="max-w-7xl mx-auto text-center relative w-full"> {/* IDE code inside */} 
-                <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-col-2 gap-6 sm:gap-8 lg:gap-12 items-center relative"> {/* structure for 2 opposing section (Description/Info & IDE) */} 
+                <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center relative"> {/* structure for 2 opposing section (Description/Info & IDE) */} 
                     <div>
                     {/* Description/tag line/buttom */}
                         <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700">
@@ -41,7 +41,7 @@ export default function Hero() {
                             <span className="text-xs sm:text-sm text-blue-300">Introducing CodeFlow AI</span> {/* Announcement Bar */}
                         </div>
 
-                        <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight "> {/* Page Description Title / Gradient Design */}
+                        <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight "> {/* Page Description Title / Gradient Design */}
                             <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">Code Faster</span>
                             <span className="bg-gradient-to-r from-white via-blue-400 to-cyan-400 bg-clip-text text-transparent block mb-1 sm:mb-2">Build Better</span>
                             <span className="bg-gradient-to-r from-white via-blue to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">With CodeFlow AI</span>
@@ -59,7 +59,12 @@ export default function Hero() {
                                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
                             </button>
 
-                            
+                            <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm border border-white/10 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white/15 flex items-center justify-center space-x-2">
+                                <div className="p-2 bg-white/10 rounded-full group-hover:bg-white/20 duration-300 transition-colors"> 
+                                    <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-white" />
+                                </div>
+                                <span>Watch Demo</span>
+                            </button>
                         </div>
 
                     </div>
@@ -67,7 +72,7 @@ export default function Hero() {
                     <div className="relative order-2 w-full">
                         {/* BIGGER IDE SIZE IN A MOBILE */}
                         <div className="relative bg-white/5 backrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-white/10">
-                            <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:w-[350px] lg:h-[450px] border border-white/5">
+                            <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[350px] lg:h-[450px] border border-white/5">
                                 {/* IDE HEADER */}
                                 <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
                                     {/* IDE WINDOW CONTROL */}
@@ -84,7 +89,7 @@ export default function Hero() {
 
                                 <div>
                                     {/* file tabs */}
-                                    <div className="p-3 sm:p-4 relative h-full">
+                                    <div className="p-3 sm:p-4 relative h-full flex">
                                         <button
                                             onClick={() => setActiveTab("App.jsx")} 
                                             className={`px-3 mr-1 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border 
@@ -134,7 +139,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-
         </section>
+        
     );
 }
