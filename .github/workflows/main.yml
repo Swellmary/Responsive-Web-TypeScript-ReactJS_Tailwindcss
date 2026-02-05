@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubunto-latest
     steps: 
-      - uses: actions/checkout@2 #get code
+      - uses: actions/checkout@v2 #get code
       - uses: actions/setup-node@v1 #setup node
         with:
           node-version: 12
